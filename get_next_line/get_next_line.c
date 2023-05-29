@@ -12,7 +12,7 @@
 
 #include "get_next_line.h"
 
-static char	*ft_get_lines(int fd, char *str)
+char	*ft_get_lines(int fd, char *str)
 {
 	char	*temp;
 	int		temp_lenght;
@@ -36,7 +36,7 @@ static char	*ft_get_lines(int fd, char *str)
 	return (str);
 }
 
-static char	*ft_actual_line(char *str, char *line)
+char	*ft_actual_line(char *str, char *line)
 {
 	int	count;
 
@@ -60,7 +60,7 @@ static char	*ft_actual_line(char *str, char *line)
 	return (line);
 }
 
-static char	*ft_get_rest(char *str)
+char	*ft_get_rest(char *str)
 {
 	size_t	count;
 	size_t	str_length;
